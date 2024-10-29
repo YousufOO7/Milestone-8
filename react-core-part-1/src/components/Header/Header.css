@@ -2,3 +2,8 @@ nav a{
     margin-right: 20px;
     color: blue;
 }
+
+nav a.active{
+    text-decoration: underline blue;
+    color: red;
+}

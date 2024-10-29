@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = props => {
@@ -9,10 +9,11 @@ const Header = props => {
             <h1 className="text-4xl font-bold">Navbar</h1>
             </div>
             <nav>
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/users">Users</Link>
-                <Link to="/contact">Contact us</Link>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/users">Users</NavLink>
+                <NavLink to="/posts">Posts</NavLink>
+                <NavLink to="/contact">Contact Us</NavLink>
             </nav>
         </div>
     );
